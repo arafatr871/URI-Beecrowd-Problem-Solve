@@ -1,0 +1,41 @@
+/* Salary Increase */
+
+#include <stdio.h>
+int main()
+{
+    double s,ns,me,per;
+    int rr;
+    scanf("%lf",&s);
+    if(s<=400.00 && s>=0)
+    {
+        rr=15;
+        ns=s+(s*0.15);
+        me=ns-s;
+    }
+    else if(s>=400.01 && s<=800.00)
+    {
+        rr=12;
+        ns=s+(s*0.12);
+        me=ns-s;
+    }
+    else if(s>=800.01 && s<=1200.00)
+    {
+        rr=10;
+        ns=s+(s*0.10);
+        me=ns-s;
+    }
+    else if(s>=1200.01 && s<=2000.00)
+    {
+        rr=7;
+        ns=s+(s*0.07);
+        me=ns-s;
+    }
+    else if(s>2000.00)
+    {
+        rr=4;
+        ns=s+(s*0.04);
+        me=ns-s;
+    }
+    printf("Novo salario: %.2lf\nReajuste ganho: %.2lf\nEm percentual: %d %%\n",ns,me,rr);
+    return 0;
+}
