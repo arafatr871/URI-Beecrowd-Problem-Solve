@@ -1,0 +1,84 @@
+/* Triangle Types */
+
+#include <stdio.h>
+int main()
+{
+    double a,b,c,i,o,p;
+    scanf("%lf %lf %lf",&a,&b,&c);
+    if(a>=b && a>=c)
+    {
+        i=a;
+        if(b>=c)
+        {
+            o=b;
+            p=c;
+        }
+        else
+        {
+            o=c;
+            p=b;
+        }
+    }
+    else if(b>=a && b>=c)
+    {
+        i=b;
+        if(a>=c)
+        {
+            o=a;
+            p=c;
+        }
+        else
+        {
+            o=c;
+            p=a;
+        }
+    }
+    else if(c>=b && c>=a)
+    {
+        i=c;
+        if(b>=a)
+        {
+            o=b;
+            p=a;
+        }
+        else
+        {
+            o=a;
+            p=b;
+        }
+    }
+    else
+    {
+
+    }
+
+
+    if(i>=(o+p))
+    {
+        printf("NAO FORMA TRIANGULO\n");
+    }
+    else if(i*i==(o*o+p*p))
+    {
+        printf("TRIANGULO RETANGULO\n");
+    }
+    else if(i*i>(o*o+p*p))
+    {
+        printf("TRIANGULO OBTUSANGULO\n");
+    }
+    else if(i*i<(o*o+p*p))
+    {
+        printf("TRIANGULO ACUTANGULO\n");
+    }
+    if(i==o && o==p)
+    {
+        printf("TRIANGULO EQUILATERO\n");
+    }
+    else if(i==o || o==p)
+    {
+        printf("TRIANGULO ISOSCELES\n");
+    }
+
+
+
+    return 0;
+}
