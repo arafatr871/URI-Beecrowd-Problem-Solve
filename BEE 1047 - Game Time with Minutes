@@ -1,4 +1,4 @@
-/*BEE 1047*/
+/* Game Time with Minutes */
 
 #include <stdio.h>
 int main()
