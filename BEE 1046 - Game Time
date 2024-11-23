@@ -1,0 +1,23 @@
+/* Game Time */
+
+#include <stdio.h>
+int main()
+{
+    int s,e,total;
+    scanf("%d %d",&s,&e);
+    if(e>s)
+    {
+        total=e-s;
+    }
+    else if(e==s)
+    {
+        total=24;
+    }
+    else if(s>e)
+    {
+        total=(24-s)+e;
+    }
+    printf("O JOGO DUROU %d HORA(S)\n",total);
+
+    return 0;
+}
