@@ -1,0 +1,28 @@
+/* Taxes */
+
+#include <stdio.h>
+int main()
+{
+    double rs,t;
+    scanf("%lf",&rs);
+    if(rs>=0.00 && rs<=2000.00)
+    {
+        printf("Isento\n");
+    }
+    else if(rs>=2000.01 && rs<=3000.00)
+    {
+        t=(rs-2000.00)*0.08;
+        printf("R$ %.2lf\n",t);
+    }
+    else if(rs>=3000.01 && rs<=4500.00)
+    {
+        t=(rs-3000.00)*0.18+80.00;
+        printf("R$ %.2lf\n",t);
+    }
+    else if(rs>4500.00)
+    {
+        t=(rs-4500.00)*0.28+350.00;
+        printf("R$ %.2lf\n",t);
+    }
+    return 0;
+}
