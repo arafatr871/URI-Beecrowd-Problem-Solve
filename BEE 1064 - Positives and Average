@@ -1,0 +1,45 @@
+/* Positives and Average */
+
+#include <stdio.h>
+
+int main() {
+     double a,b,c,d,e,f,s=0,av;
+     int sum=0;
+     scanf("%lf %lf %lf %lf %lf %lf",&a,&b,&c,&d,&e,&f);
+     if(a>0)
+     {
+         sum=sum+1;
+         s=s+a;
+     }
+     if(b>0)
+     {
+         sum=sum+1;
+         s=s+b;
+     }
+     if(c>0)
+     {
+         sum=sum+1;
+         s=s+c;
+     }
+     if(d>0)
+     {
+         sum=sum+1;
+         s=s+d;
+     }
+     if(e>0)
+     {
+         sum=sum+1;
+         s=s+e;
+     }
+     if(f>0)
+     {
+         sum=sum+1;
+         s=s+f;
+     }
+     av=s/sum;
+     printf("%d valores positivos\n",sum);
+     printf("%.1lf\n",av);
+
+
+    return 0;
+}
