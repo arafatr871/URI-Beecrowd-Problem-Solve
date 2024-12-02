@@ -1,0 +1,14 @@
+/* Multiplication Table */
+
+#include<stdio.h>
+int main()
+{
+    int n,f;
+    scanf("%d",&n);
+    for(int i=1; i<=10; i++)
+    {
+       f=i*n;
+       printf("%d x %d = %d\n",i,n,f);
+    }
+    return 0;
+}
