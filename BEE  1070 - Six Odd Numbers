@@ -1,0 +1,18 @@
+/* Six Odd Numbers */
+
+#include <stdio.h>
+
+int main() {
+    int X;
+    scanf("%d", &X);
+
+    for (int i = 0; i < 6; i++) {
+        if (X % 2 == 0) {
+            X++; // If X is even, move to the next odd number
+        }
+        printf("%d\n", X);
+        X += 2; // Skip to the next odd number
+    }
+
+    return 0;
+}
