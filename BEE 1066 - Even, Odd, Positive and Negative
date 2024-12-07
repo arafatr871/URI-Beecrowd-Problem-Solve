@@ -1,0 +1,95 @@
+/* 1066 - Even, Odd, Positive and Negative */
+
+#include <stdio.h>
+
+int main() {
+     int a,b,c,d,e,f;
+     int sum=0,od=0,ps=0,ng=0;
+     scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+     if(a%2==0)
+     {
+         sum=sum+1;
+     }
+     if(b%2==0)
+     {
+         sum=sum+1;
+     }
+     if(c%2==0)
+     {
+         sum=sum+1;
+     }
+     if(d%2==0)
+     {
+         sum=sum+1;
+     }
+     if(e%2==0)
+     {
+         sum=sum+1;
+     }
+     if(a%2!=0)
+     {
+         od=od+1;
+     }
+     if(b%2!=0)
+     {
+          od=od+1;
+     }
+     if(c%2!=0)
+     {
+          od=od+1;
+     }
+     if(d%2!=0)
+     {
+          od=od+1;
+     }
+     if(e%2!=0)
+     {
+          od=od+1;
+     }
+     if(a>0)
+     {
+         ps=ps+1;
+     }
+     if(b>0)
+     {
+         ps=ps+1;
+     }
+     if(c>0)
+     {
+         ps=ps+1;
+     }
+     if(d>0)
+     {
+         ps=ps+1;
+     }
+     if(e>0)
+     {
+         ps=ps+1;
+     }
+     if(a<0)
+     {
+         ng=ng+1;
+     }
+     if(b<0)
+     {
+          ng=ng+1;
+     }
+     if(c<0)
+     {
+         ng=ng+1;
+     }
+     if(d<0)
+     {
+        ng=ng+1;
+     }
+     if(e<0)
+     {
+          ng=ng+1;
+     }
+     printf("%d valor(es) par(es)\n",sum);
+     printf("%d valor(es) impar(es)\n",od);
+     printf("%d valor(es) positivo(s)\n",ps);
+     printf("%d valor(es) negativo(s)\n",ng);
+
+    return 0;
+}
