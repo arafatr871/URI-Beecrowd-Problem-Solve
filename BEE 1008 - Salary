@@ -1,0 +1,15 @@
+/* Salary */
+
+#include <stdio.h>
+
+main() {
+
+  int A,B,NUMBER;
+  float WH,SALARY;
+  scanf("%d%d%f",&A,&B,&WH);
+  NUMBER = A;
+  SALARY = B*WH ;
+  printf("NUMBER = %d\nSALARY = U$ %.2f\n",NUMBER,SALARY);
+
+    return 0;
+}
