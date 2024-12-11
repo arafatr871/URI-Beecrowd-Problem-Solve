@@ -1,0 +1,13 @@
+/* Salary with Bonus */
+
+#include<stdio.h>
+int main()
+{
+    double fs,ts,p;
+    char firstname[20];
+    scanf("%s",&firstname);
+    scanf("%lf %lf",&fs,&ts);
+    p=(ts*15)/100;
+    printf("TOTAL = R$ %.2lf\n",fs+p);
+
+}
