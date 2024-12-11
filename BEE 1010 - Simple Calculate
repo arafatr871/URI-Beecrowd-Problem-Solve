@@ -1,0 +1,17 @@
+/* Simple Calculate */
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int cop;
+    double nou,pou,a,b,pg;
+    scanf("%d %lf %lf",&cop,&nou,&pou);
+    a=nou*pou;
+    scanf("%d %lf %lf",&cop,&nou,&pou);
+    b=nou*pou;
+    pg=a+b;
+    printf("VALOR A PAGAR: R$ %.2lf\n",pg);
+ 
+    return 0;
+}
