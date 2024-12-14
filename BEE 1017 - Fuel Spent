@@ -1,0 +1,13 @@
+/* Fuel Spent */
+
+#include <stdio.h>
+ 
+int main() {
+ 
+   float  st,spd,fs;
+   scanf("%f %f",&st,&spd);
+   fs=(st*spd)/12;
+   printf("%.3f\n",fs);
+ 
+    return 0;
+}
