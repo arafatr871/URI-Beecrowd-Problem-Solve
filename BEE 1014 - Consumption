@@ -1,0 +1,13 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int x;
+    double y,A;
+    scanf("%d %lf",&x,&y);
+    A=x/y;
+    printf("%.3lf km/l\n",A);
+    return 0;
+}
