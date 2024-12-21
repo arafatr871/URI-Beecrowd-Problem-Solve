@@ -1,0 +1,21 @@
+/* Sequence IJ 4 */
+
+#include<stdio.h>
+int main(){
+    float i,j;
+    int t;
+    for(i=0.0; i<2.1; i+=.2)
+    {
+        for(j=1.0; j<=3; j=j+1.0)
+        {
+            if((i > 0.0 && i < 1.0) || (i > 1.0 && i < 2.0))
+                printf("I=%.1f J=%.1f\n", i, j+i);
+            else
+            {
+                t=(int)(i+0.5); // Rounding to nearest integer
+                printf("I=%d J=%.0f\n", t, j+i);
+            }
+        }
+    }
+    return 0;
+}
