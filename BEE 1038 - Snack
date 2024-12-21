@@ -1,0 +1,39 @@
+/* Snack */
+
+#include <stdio.h>
+
+int main()
+{
+
+    float sp,total;
+    int X,Y;
+    scanf("%d %d",&X,&Y);
+    if(X==1)
+    {
+        sp=4.00;
+    }
+    else if(X==2)
+    {
+        sp=4.50;
+    }
+    else if(X==3)
+    {
+        sp=5.00;
+    }
+    else if(X==4)
+    {
+        sp=2.00;
+    }
+    else if(X==5)
+    {
+        sp=1.50;
+    }
+    else
+    {
+    }
+     total=Y*sp;
+     printf("Total: R$ %.2f\n",total);
+
+
+    return 0;
+}
