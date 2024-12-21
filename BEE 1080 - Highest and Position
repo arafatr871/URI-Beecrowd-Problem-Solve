@@ -1,0 +1,19 @@
+/* Highest and Position */
+
+#include<stdio.h>
+int main()
+{
+    int max=0,m,pos;
+    for(int i=1;i<=100;i++)
+    {
+        scanf("%d",&m);
+        if(max<m)
+        {
+            max=m;
+            pos=i;
+        }
+    }
+    printf("%d\n%d\n",max,pos);
+    
+    return 0;
+}
