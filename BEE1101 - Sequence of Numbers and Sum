@@ -1,0 +1,34 @@
+/* Sequence of Numbers and Sum */
+
+#include<stdio.h>
+int main()
+{
+    int m,n,sum,b;
+    while(1)
+    {
+
+        scanf("%d %d",&m,&n);
+        if(m<=0 || n<=0)
+        {
+            break;
+        }
+        if(m<n)
+        {
+            b=m;
+            m=n;
+            n=b;
+        }
+        sum=0;
+        for(int i=n; i<=m; i++)
+        {
+
+            printf("%d ",i);
+            sum+=i;
+        }
+        printf("Sum=%d\n",sum);
+    }
+
+  return 0;
+
+}
+
