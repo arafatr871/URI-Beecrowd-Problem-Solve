@@ -1,0 +1,26 @@
+/* Dividing X by Y */
+
+#include<stdio.h>
+int main()
+{
+    int a,m,n;
+    double d;
+    scanf("%d",&a);
+    for(int i=0;i<a;i++)
+    {
+        scanf("%d %d",&m,&n);
+        if(n==0)
+        {
+            printf("divisao impossivel\n");
+        }
+        else
+        {
+         d=(double)m/n;
+         printf("%.1lf\n",d);
+        }
+
+    }
+
+    return 0;
+
+}
