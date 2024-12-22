@@ -1,0 +1,34 @@
+/* Score Validation */
+
+#include<stdio.h>
+int main()
+{
+
+    double m,s=0.0,md;
+    int vd=0;
+    while(1)
+    {
+        scanf("%lf",&m);
+        if(m>=0 && m<=10)
+        {
+            vd++;
+            s+=m;
+            if(vd==2)
+            {
+
+                md=s*0.5;
+                printf("media = %.2lf\n",md);
+                break;
+            }
+        }
+        else
+        {
+            printf("nota invalida\n");
+        }
+
+
+    }
+
+    return 0;
+
+}
