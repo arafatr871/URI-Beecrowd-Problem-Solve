@@ -1,0 +1,16 @@
+/* S Sequence II */
+
+#include<stdio.h>
+int main()
+{
+   double s=1.00,p=2.00;
+   for(double i=3.00;i<=39.00;i+=2)
+   {
+       s=s+(i/p);
+       p*=2;
+   }
+   printf("%.2lf\n",s);
+
+    return 0;
+
+}
