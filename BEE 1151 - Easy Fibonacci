@@ -1,0 +1,20 @@
+/* Easy Fibonacci */
+
+#include<stdio.h>
+int main()
+{
+    int f=0,s=1,nxt,n;
+    scanf("%d",&n);
+    printf("%d %d",f,s);
+    for(int i=3;i<=n;i++)
+    {
+        nxt=f+s;
+        printf(" %d",nxt);
+        f=s;
+        s=nxt;
+    }
+    printf("\n");
+
+    return 0;
+
+}
