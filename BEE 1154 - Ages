@@ -1,0 +1,27 @@
+/* Ages */
+
+#include<stdio.h>
+int main()
+{
+   int n,s=0,c=0;
+   double avg;
+   while(1)
+   {
+       scanf("%d",&n);
+        if(n>=0)
+        {
+            s+=n;
+            c++;
+        }
+        else if(n<0)
+        {
+            break;
+        }
+   }
+   avg=(float)s/c;
+   printf("%.2lf\n",avg);
+
+
+    return 0;
+
+}
