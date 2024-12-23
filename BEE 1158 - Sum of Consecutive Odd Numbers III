@@ -1,0 +1,33 @@
+/* Sum of Consecutive Odd Numbers III */
+
+#include<stdio.h>
+int main()
+{
+    int n,x,y,c,sum;
+    scanf("%d",&n);
+    for(int i=0; i<n; i++)
+    {
+        scanf("%d %d",&x,&y);
+        sum=0;
+        c=0;
+        if(x%2==0)
+        {
+            x++;
+        }
+        while(c<y)
+        {
+            sum+=x;
+            x+=2;
+            c++;
+
+        }
+
+        printf("%d\n",sum);
+    }
+
+
+
+
+    return 0;
+
+}
