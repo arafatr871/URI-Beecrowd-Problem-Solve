@@ -1,0 +1,50 @@
+/* Grenais */
+
+#include<stdio.h>
+int main()
+{
+    int i,g,d=0,grenal,in=0,gre=0,x;
+    while(1)
+    {
+        scanf("%d%d",&i,&g);
+        printf("Novo grenal (1-sim 2-nao)\n");
+        if(i>g)
+        {
+            in++;
+        }
+        else if(i==g)
+        {
+            d++;
+        }
+        else
+        {
+            gre++;
+        }
+        scanf("%d",&x);
+        if(x==2)
+        {
+            break;
+        }
+
+    }
+    grenal=in+d+gre;
+    printf("%d grenais\n",grenal);
+    printf("Inter:%d\n",in);
+    printf("Gremio:%d\n",gre);
+    printf("Empates:%d\n",d);
+    if(in>gre)
+    {
+        printf("Inter venceu mais\n");
+    }
+    else if(gre>in)
+    {
+        printf("Gremio venceu mais\n");
+    }
+    else if(gre==in)
+    {
+        printf("Não houve vencedor\n");
+    }
+
+    return 0;
+
+}
