@@ -1,0 +1,15 @@
+/* S Sequence */
+
+#include<stdio.h>
+int main()
+{
+   double s=0.00;
+   for(double i=1.00;i<=100.00;i++)
+   {
+       s=s+(1.00/i);
+   }
+   printf("%.2lf\n",s);
+
+    return 0;
+
+}
