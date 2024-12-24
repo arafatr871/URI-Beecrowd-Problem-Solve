@@ -1,0 +1,23 @@
+/* Summing Consecutive Integers */
+
+#include<stdio.h>
+int main()
+{
+    int a,n,c;
+    scanf("%d %d",&a,&n);
+    while(n<=0)
+    {
+        scanf("%d",&n);
+    }
+    int sum=0;
+    while(c<n)
+    {
+        sum+=a;
+        a++;
+        c++;
+    }
+    printf("%d\n",sum);
+
+
+    return 0;
+}
