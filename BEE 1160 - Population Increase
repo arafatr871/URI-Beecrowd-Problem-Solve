@@ -1,0 +1,32 @@
+/* Population Increase */
+
+#include<stdio.h>
+int main()
+{
+    int x,p1,p2,np1,np2,j=0;
+    double g1,g2;
+    scanf("%d",&x);
+    for(int i=0; i<x; i++)
+    {
+        scanf("%d %d %lf %lf",&p1,&p2,&g1,&g2);
+        while(p1<=p2)
+        {
+
+            p1+= (p1*g1)/100;
+            p2+= (p2*g2)/100;
+            j++;
+            if(j>100)break;
+
+        }
+        if(j>100)
+        {
+            printf("Mais de 1 seculo.\n");
+        }
+        else
+        {
+            printf("%d anos.\n",j);
+        }
+        j=0;
+    }
+    return 0;
+}
