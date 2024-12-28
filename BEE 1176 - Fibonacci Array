@@ -1,0 +1,25 @@
+/* Fibonacci Array */
+
+#include <stdio.h>
+int main()
+{
+    int x,w;
+    long long int ar[61];
+    ar[0]=0;
+    ar[1]=1;
+    for(int i=2; i<61; i++)
+    {
+        ar[i]=ar[i-1]+ar[i-2];
+    }
+    scanf("%d",&x);
+    for(int j=0; j<x; j++)
+    {
+        scanf("%d",&w);
+        printf("Fib(%d) = %lld\n",w,ar[w]);
+    }
+
+
+
+
+    return 0;
+}
