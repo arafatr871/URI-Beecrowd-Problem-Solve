@@ -1,0 +1,49 @@
+/* Array Fill IV */
+
+#include<stdio.h>
+int main()
+{
+    int e[5],o[5];
+    int x,m=0,n=0;
+    for(int i=0;i<15;i++)
+    {
+        scanf("%d",&x);
+        if(x%2==0)
+        {
+            e[m++]=x;
+            if(m==5)
+            {
+                for(int j=0;j<5;j++)
+                {
+                    printf("par[%d] = %d\n",j,e[j]);
+                    
+                }
+                m=0;
+            }
+        }
+        else
+        {
+            o[n++]=x;
+            if(n==5)
+            {
+                for(int j=0;j<5;j++)
+                {
+                    printf("impar[%d] = %d\n",j,o[j]);
+                    
+                }
+                n=0;
+            }
+        }
+    }
+    for(int k=0;k<n;k++)
+    {
+        printf("impar[%d] = %d\n",k,o[k]);
+    }
+    for(int k=0;k<m;k++)
+    {
+        printf("par[%d] = %d\n",k,e[k]);
+    }
+    
+
+    return 0;
+}
