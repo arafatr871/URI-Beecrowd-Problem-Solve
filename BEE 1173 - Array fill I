@@ -1,0 +1,16 @@
+/* Array fill I */
+
+#include <stdio.h>
+int main()
+{
+    int x,ar[10];
+    scanf("%d",&ar[0]);
+    x=ar[0];
+    for(int i=0;i<10;i++)
+    {
+        printf("N[%d] = %d\n",i,x);
+        x*=2;
+    }
+
+    return 0;
+}
