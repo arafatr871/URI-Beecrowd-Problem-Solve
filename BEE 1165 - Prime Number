@@ -1,0 +1,38 @@
+/* Prime Number */
+
+#include<stdio.h>
+int main()
+{
+    int n,x;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&x);
+        int isPrime=1;
+        if(x<=1)
+        {
+            isPrime=0;
+        }
+        else
+        {
+            for(int j=2;j<=x/2;j++)
+            {
+                if(x%j==0)
+                {
+                    isPrime=0;
+                    break;
+                }
+            }
+        }
+        if(isPrime)
+        {
+            printf("%d eh primo\n",x);
+        }
+        else
+        {
+            printf("%d nao eh primo\n",x);
+        }
+    }
+
+    return 0;
+}
