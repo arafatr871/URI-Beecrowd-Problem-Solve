@@ -1,0 +1,33 @@
+/* Column in Array */
+
+#include<stdio.h>
+int main()
+{
+    double m[12][12],sum=0.0;
+    int c;
+    char A[2];
+    scanf("%d %s",&c,&A);
+
+    for(int i=0; i<12; i++)
+    {
+        for(int j=0; j<12; j++)
+        {
+            scanf("%lf",&m[i][j]);
+        }
+    }
+    for(int k=0; k<12; k++)
+    {
+        sum += m[k][c];
+    }
+    if(A[0]=='S')
+    {
+        printf("%.1lf\n",sum);
+    }
+    else if(A[0]=='M')
+    {
+        printf("%.1lf\n",sum/12.0);
+    }
+
+
+    return 0;
+}
