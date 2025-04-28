@@ -1,0 +1,22 @@
+/* 1858 - Theon's Answer */
+
+#include<stdio.h>
+int main()
+{
+    int a,n,min=100,mi=0;
+    scanf("%d",&n);
+
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a);
+        if(a<min)
+        {
+            min=a;
+            mi=i;
+        }
+
+    }
+    printf("%d\n",mi+1);
+
+    return 0;
+}
