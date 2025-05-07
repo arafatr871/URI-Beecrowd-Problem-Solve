@@ -1,0 +1,40 @@
+/* 1914 - Whose Turn Is It? */
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int n;
+    long long int k,p;
+    char ar1[30],ar2[30],ar3[30],ar4[30];
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+    {
+        scanf("%s %s %s %s",&ar1,&ar2,&ar3,&ar4);
+        scanf("%lld %lld",&k,&p);
+        if(ar2[0]=='I')
+        {
+            if((k+p)%2==0)
+            {
+                printf("%s\n",ar3);
+            }
+            else
+            {
+                printf("%s\n",ar1);
+            }
+        }
+        else
+        {
+            if((k+p)%2==0)
+            {
+                printf("%s\n",ar1);
+            }
+            else
+            {
+                printf("%s\n",ar3);
+            }
+
+        }
+    }
+    return 0;
+}
