@@ -1,0 +1,13 @@
+/* 1957 - Converting to Hexadecimal */
+
+#include<stdio.h>
+int main()
+{
+    int a,e,r;
+    scanf("%d",&a);
+
+    printf("%X\n",a);
+
+
+    return 0;
+}
