@@ -1,0 +1,20 @@
+/* 1958 - Scientific Notation */
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double X;
+    scanf("%lf", &X);
+
+    // Extract mantissa and exponent
+    int exponent = 0;
+    if (X != 0) {
+        exponent = (int)floor(log10(fabs(X))); // Calculate the exponent
+        X /= pow(10, exponent);               // Adjust X to become the mantissa
+    }
+
+    // Round the mantissa to 4 decimal places
+    printf("%+.4fE%+03d\n", X, exponent); // Format the output
+    return 0;
+}
