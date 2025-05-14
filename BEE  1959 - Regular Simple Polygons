@@ -1,0 +1,12 @@
+/* 1959 - Regular Simple Polygons */
+
+#include<stdio.h>
+int main()
+{
+    long long int a,e,r;
+    scanf("%lld %lld",&a,&e);
+    r=a*e;
+    printf("%lld\n",r);
+
+    return 0;
+}
