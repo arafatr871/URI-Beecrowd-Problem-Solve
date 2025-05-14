@@ -1,0 +1,18 @@
+/* 1930 - Electrical Outlet */
+
+#include <stdio.h>
+
+int main() {
+    int T1, T2, T3, T4;
+
+    // Step 1: Input the number of outlets in each strip
+    scanf("%d %d %d %d", &T1, &T2, &T3, &T4);
+
+    // Step 2: Calculate the total number of usable outlets
+    int max_devices = T1 + T2 + T3 + T4 - 3;
+
+    // Step 3: Print the result
+    printf("%d\n", max_devices);
+
+    return 0;
+}
